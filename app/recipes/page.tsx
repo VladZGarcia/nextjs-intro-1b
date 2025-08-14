@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: "A collection of delicious recipes",
 };
 
+
+
+
 async function RecipeList() {
   const recipes: Recipe[] = await fetchAllRecipes();
   return (

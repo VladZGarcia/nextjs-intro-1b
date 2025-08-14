@@ -1,4 +1,4 @@
-import Bagdes from "@/components/bagdes";
+import Badges from "@/components/bagdes";
 import MainWrapper from "@/components/main-wrapper";
 import ReviewStars from "@/components/stars";
 import { fetchRecipeById } from "@/lib/data/recipe";
@@ -55,7 +55,7 @@ export default async function RecipePage({
             Reviews:
             <ReviewStars rating={recipe.rating} />({recipe.reviewCount})
           </div>
-          <Bagdes className="bg-neutral-300" strings={recipe.tags} />
+          <Badges className="dark:bg-blue-600 bg-neutral-300" strings={recipe.tags} />
           <section>
             <h3 className="font-bold">Ingredients</h3>
             <ul className="list-disc pl-6">
