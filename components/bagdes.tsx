@@ -10,7 +10,7 @@ export default function Badges({
   return (
     <ul className="flex gap-1 flex-wrap">
       {strings.map((tag, i) => (
-        <Link href={`/search/${tag}`} key={i}>
+        <Link href={`/pages/search/${tag}`} key={i}>
           <li className={`text-sm px-2 py-0.5 ${className}`} key={i}>
             {tag}
           </li>

@@ -23,7 +23,7 @@ import { Suspense } from "react";
       }>
         {recipes.map((recipe, i) => (
           <li key={i}>
-            <Link href={`/recipes/${recipe.id}`}>
+            <Link href={`/pages/recipes/${recipe.id}`}>
               <Card
                 recipe={recipe}
                 className="border border-neutral-300 shadow-sm"

@@ -26,7 +26,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
   return (
       <MainWrapper title={query ? `Search results for "${query}"` : "Search recipes"}>
     {/* Inputform */}
-      <form action="/search" method="get" className="mb-6 flex gap-2">
+      <form action="/pages/search" method="get" className="mb-6 flex gap-2">
         <input
           type="text"
           name="query"
@@ -46,7 +46,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
           {recipes.length > 0 ? (
             recipes.map((recipe: Recipe) => (
                 <li key={recipe.id}>
-                    <Link href={`/recipes/${recipe.id}`}>
+                    <Link href={`/pages/recipes/${recipe.id}`}>
                       <Card recipe={recipe} className="border border-neutral-300 shadow-sm" />
                     </Link>
                 </li>

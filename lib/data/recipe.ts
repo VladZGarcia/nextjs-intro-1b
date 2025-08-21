@@ -22,9 +22,18 @@ export async function getRecipesByTag(tag: string) {
 }
 
 export async function getRecipesBySearchTerm(searchTerm: string) {
-  const response = await fetch(
+
+  try {
+    const response = await fetch(
     `https://dummyjson.com/recipes/search?q=${searchTerm}`
   );
   const { recipes }: RecipeResponse = await response.json();
   return recipes;
+
+  }
+  catch (error) {
+    console.error("Error fetching recipes by search term:", error);
+    return [];
+  }
+  
 }

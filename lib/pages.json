@@ -5,19 +5,19 @@
             "label": "Home"
         },
         {
-            "href": "/about",
+            "href": "/pages/about",
             "label": "About"
         },
         {
-            "href": "/contact",
+            "href": "/pages/contact",
             "label": "Contact"
         },
         {
-            "href": "/recipes",
+            "href": "/pages/recipes",
             "label": "Recipes"
         },
         {
-            "href": "/search",
+            "href": "/pages/search",
             "label": "Search"
         }
     ]
